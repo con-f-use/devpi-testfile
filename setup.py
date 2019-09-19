@@ -4,7 +4,7 @@ from setuptools import setup
 import os
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.md'), 'rb').read().decode('utf-8')
+README = open(os.path.join(here, "README.md"), "rb").read().decode("utf-8")
 
 
 setup(
@@ -23,19 +23,18 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
     ]
     + [("Programming Language :: Python :: %s" % x) for x in "3.5 3.6 3.7".split()],
-    entry_points={'devpi_client': ["devpi-testfile = devpi_testfile.client"]},
-    setup_requires=['setuptools_scm'],
+    entry_points={"devpi_client": ["devpi-testfile = devpi_testfile.client"]},
+    setup_requires=["setuptools_scm"],
     install_requires=["appdirs", "attrs"],
     extras_require={
-        'dev': ['pytest', 'pytest-cov'],
-        'client': ['devpi-client>=4.3.0'],
-        'server': ['devpi-server>=5.0.0'],
+        "dev": ["pytest", "pytest-cov"],
+        "client": ["devpi-client>=4.3.0"],
+        "server": ["devpi-server>=5.0.0"],
     },
     include_package_data=True,
     zip_safe=False,
-    options={'bdist_wheel': {'universal': True}},
+    options={"bdist_wheel": {"universal": True}},
     python_requires=">=3.5",
     package_dir={"": "src"},
-    packages=['devpi_testfile'],
+    packages=["devpi_testfile"],
 )
-
