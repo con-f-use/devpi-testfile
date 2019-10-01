@@ -4,6 +4,7 @@
 .cache/
 .envrc
 .direnv/
+.eggs/
 /bin/
 dist/
 htmlcov/

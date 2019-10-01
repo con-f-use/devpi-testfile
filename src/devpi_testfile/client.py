@@ -134,8 +134,7 @@ def require_pr_index(hub, name):
 
 
 def new_pr_arguments(parser):
-    """ Create a new pull request.
-    """
+    """Create a new pull request."""
     parser.add_argument(
         "name",
         metavar="NAME",
@@ -196,8 +195,7 @@ def new_pr(hub, args):
 
 
 def abort_pr_review_arguments(parser):
-    """ Abort review of pull request.
-    """
+    """Abort review of pull request."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -215,8 +213,7 @@ def abort_pr_review(hub, args):
 
 
 def approve_pr_arguments(parser):
-    """ Approve reviewed pull request.
-    """
+    """Approve reviewed pull request."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -265,8 +262,7 @@ def approve_pr(hub, args):
 
 
 def list_prs_arguments(parser):
-    """ List pull requests.
-    """
+    """List pull requests."""
     parser.add_argument(
         "indexname",
         type=str,
@@ -392,8 +388,7 @@ def list_prs(hub, args):
 
 
 def reject_pr_arguments(parser):
-    """ Reject pull request.
-    """
+    """Reject pull request."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -412,8 +407,7 @@ def reject_pr(hub, args):
 
 
 def review_pr_arguments(parser):
-    """ Start reviewing a submitted pull request.
-    """
+    """Start reviewing a submitted pull request."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -463,8 +457,7 @@ def review_pr(hub, args):
 
 
 def submit_pr_arguments(parser):
-    """ Submit an existing pull request for review.
-    """
+    """Submit an existing pull request for review."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -481,8 +474,7 @@ def submit_pr(hub, args):
 
 
 def cancel_pr_arguments(parser):
-    """ Cancel submitted state of pull request by submitter.
-    """
+    """Cancel submitted state of pull request by submitter."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -499,8 +491,7 @@ def cancel_pr(hub, args):
 
 
 def delete_pr_arguments(parser):
-    """ Completely remove a pull request including any uploaded packages.
-    """
+    """Completely remove a pull request including any uploaded packages."""
     parser.add_argument(
         "name", type=str, action="store", nargs=1, help="pull request name"
     )
@@ -516,16 +507,16 @@ def delete_pr(hub, args):
 def devpiclient_subcommands():
     return [
         (new_pr_arguments, "new-pr", "devpi_testfile.client:new_pr"),
-        (submit_pr_arguments, "submit-pr", "devpi_testfile.client:submit_pr"),
-        (list_prs_arguments, "list-prs", "devpi_testfile.client:list_prs"),
-        (review_pr_arguments, "review-pr", "devpi_testfile.client:review_pr"),
-        (
-            abort_pr_review_arguments,
-            "abort-pr-review",
-            "devpi_testfile.client:abort_pr_review",
-        ),
-        (approve_pr_arguments, "approve-pr", "devpi_testfile.client:approve_pr"),
-        (reject_pr_arguments, "reject-pr", "devpi_testfile.client:reject_pr"),
-        (cancel_pr_arguments, "cancel-pr", "devpi_testfile.client:cancel_pr"),
-        (delete_pr_arguments, "delete-pr", "devpi_testfile.client:delete_pr"),
+        # (submit_pr_arguments, "submit-pr", "devpi_testfile.client:submit_pr"),
+        # (list_prs_arguments, "list-prs", "devpi_testfile.client:list_prs"),
+        # (review_pr_arguments, "review-pr", "devpi_testfile.client:review_pr"),
+        # (
+        #     abort_pr_review_arguments,
+        #     "abort-pr-review",
+        #     "devpi_testfile.client:abort_pr_review",
+        # ),
+        # (approve_pr_arguments, "approve-pr", "devpi_testfile.client:approve_pr"),
+        # (reject_pr_arguments, "reject-pr", "devpi_testfile.client:reject_pr"),
+        # (cancel_pr_arguments, "cancel-pr", "devpi_testfile.client:cancel_pr"),
+        # (delete_pr_arguments, "delete-pr", "devpi_testfile.client:delete_pr"),
     ]

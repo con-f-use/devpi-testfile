@@ -1,0 +1,372 @@
+{
+  "reportversion": "1",
+  "toxversion": "3.14.0",
+  "platform": "linux",
+  "host": "jcgbx",
+  "commands": [
+    {
+      "command": [
+        "/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3",
+        "-m",
+        "virtualenv",
+        "--no-download",
+        "--python",
+        "/usr/bin/python2.7",
+        "py27"
+      ],
+      "output": "Running virtualenv with interpreter /usr/bin/python2.7\nAlready using interpreter /usr/bin/python2.7\nNew python executable in /home/jan/devel/cuda/atdiff/.tox/py27/bin/python2.7\nAlso creating executable in /home/jan/devel/cuda/atdiff/.tox/py27/bin/python\nInstalling setuptools, pip, wheel...\ndone.\n",
+      "retcode": 0
+    },
+    {
+      "command": [
+        "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pip",
+        "install",
+        "--trusted-host",
+        "10.17.65.203",
+        "--index-url",
+        "http://10.17.65.203/root/test",
+        "setuptools>=41.2.0",
+        "pip>=19.2.3",
+        "wheel>=0.33",
+        "cudasetuptools",
+        "pytest",
+        "pytest-mock",
+        "pytest-cov",
+        "hypothesis"
+      ],
+      "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nRequirement already satisfied: setuptools>=41.2.0 in ./.tox/py27/lib/python2.7/site-packages (41.2.0)\nRequirement already satisfied: pip>=19.2.3 in ./.tox/py27/lib/python2.7/site-packages (19.2.3)\nRequirement already satisfied: wheel>=0.33 in ./.tox/py27/lib/python2.7/site-packages (0.33.6)\nCollecting cudasetuptools\n  Downloading http://10.17.65.203/root/test/%2Bf/71d/30bba9b4b4efd/cudasetuptools-0.2.24-py2.py3-none-any.whl\nCollecting pytest\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d10/0a02770f665f5/pytest-4.6.5-py2.py3-none-any.whl (230kB)\nCollecting pytest-mock\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a89/104018a4083b5/pytest_mock-1.11.0-py2.py3-none-any.whl\nCollecting pytest-cov\n  Downloading http://10.17.65.203/root/pypi/%2Bf/2b0/97cde81a302e1/pytest_cov-2.7.1-py2.py3-none-any.whl\nCollecting hypothesis\n  Downloading http://10.17.65.203/root/pypi/%2Bf/854/e09e070d0b90f/hypothesis-4.37.0.tar.gz (210kB)\nCollecting pytz (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c89/4d57500a4cd2d/pytz-2019.2-py2.py3-none-any.whl (508kB)\nCollecting importlib-resources (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6e2/783b2538bd5a1/importlib_resources-1.0.2-py2.py3-none-any.whl\nCollecting gitpython (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/178/15b908454e496/GitPython-2.1.14-py2.py3-none-any.whl (452kB)\nCollecting twine (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/630/fadd6e342e725/twine-1.15.0-py2.py3-none-any.whl\nCollecting attrs>=17.4.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/69c/0dbf2ed392de1/attrs-19.1.0-py2.py3-none-any.whl\nCollecting packaging (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d95/51545c6d761f3/packaging-19.2-py2.py3-none-any.whl\nCollecting py>=1.5.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/64f/65755aee5b381/py-1.8.0-py2.py3-none-any.whl (83kB)\nCollecting atomicwrites>=1.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/034/72c30eb2c5d1b/atomicwrites-1.3.0-py2.py3-none-any.whl\nCollecting funcsigs>=1.0; python_version < \"3.0\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/330/cc27ccbf7f1e9/funcsigs-1.0.2-py2.py3-none-any.whl\nCollecting importlib-metadata>=0.12 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d5f/18a79777f3aa1/importlib_metadata-0.23-py2.py3-none-any.whl\nCollecting pathlib2>=2.2.0; python_version < \"3.6\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/0ec/8205a157c80d7/pathlib2-2.3.5-py2.py3-none-any.whl\nCollecting more-itertools<6.0.0,>=4.0.0; python_version <= \"2.7\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c0a/5785b1109a6bd/more_itertools-5.0.0-py2-none-any.whl (52kB)\nCollecting pluggy<1.0,>=0.12 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/0db/4b7601aae1d35/pluggy-0.13.0-py2.py3-none-any.whl\nCollecting six>=1.10.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/335/0809f0555b11f/six-1.12.0-py2.py3-none-any.whl\nCollecting wcwidth (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f4e/be71925af7b40/wcwidth-0.1.7-py2.py3-none-any.whl\nCollecting mock; python_version < \"3.0\" (from pytest-mock)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d15/7e52d4e5b938c/mock-3.0.5-py2.py3-none-any.whl\nCollecting coverage>=4.4 (from pytest-cov)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/089/07593569fe59b/coverage-4.5.4-cp27-cp27mu-manylinux1_x86_64.whl (202kB)\nCollecting enum34 (from hypothesis)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6bd/0f6ad48ec2aa1/enum34-1.1.6-py2-none-any.whl\nCollecting typing; python_version < \"3.5\" (from importlib-resources->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c8c/abb5ab8945cd2/typing-3.7.4.1-py2-none-any.whl\nCollecting gitdb2>=2.0.0 (from gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/96b/bb507d765a7f5/gitdb2-2.0.6-py2.py3-none-any.whl (63kB)\nCollecting readme-renderer>=21.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c85/32b79afc0375a/readme_renderer-24.0-py2.py3-none-any.whl\nCollecting tqdm>=4.14 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/dd3/fcca8488bb1d4/tqdm-4.36.1-py2.py3-none-any.whl (52kB)\nCollecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/380/606e1d10dc85c/requests_toolbelt-0.9.1-py2.py3-none-any.whl (54kB)\nCollecting pkginfo>=1.4.2 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a6d/9e40ca61ad3eb/pkginfo-1.5.0.1-py2.py3-none-any.whl\nCollecting requests!=2.15,!=2.16,>=2.5.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9cf/5292fcd0f598c/requests-2.22.0-py2.py3-none-any.whl (57kB)\nCollecting pyparsing>=2.0.2 (from packaging->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d93/38df12903bbf5/pyparsing-2.4.2-py2.py3-none-any.whl (65kB)\nCollecting zipp>=0.5 (from importlib-metadata>=0.12->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f06/903e9f1f43b12/zipp-0.6.0-py2.py3-none-any.whl\nCollecting configparser>=3.5; python_version < \"3\" (from importlib-metadata>=0.12->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/254/c1d9c79f60c45/configparser-4.0.2-py2.py3-none-any.whl\nCollecting contextlib2; python_version < \"3\" (from importlib-metadata>=0.12->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9d2/c67f18c1f9b6d/contextlib2-0.6.0-py2.py3-none-any.whl\nCollecting scandir; python_version < \"3.5\" (from pathlib2>=2.2.0; python_version < \"3.6\"->pytest)\nCollecting smmap2>=2.0.0 (from gitdb2>=2.0.0->gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/055/5a7bf4df71d1e/smmap2-2.0.5-py2.py3-none-any.whl\nCollecting bleach>=2.1.0 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/213/336e49e102af2/bleach-3.1.0-py2.py3-none-any.whl (157kB)\nCollecting docutils>=0.13.1 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9e4/d7ecfc600058e/docutils-0.15.2-py2-none-any.whl (548kB)\nCollecting Pygments (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/71e/430bc85c88a43/Pygments-2.4.2-py2.py3-none-any.whl (883kB)\nCollecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/3de/946ffbed6e674/urllib3-1.25.6-py2.py3-none-any.whl (125kB)\nCollecting idna<2.9,>=2.5 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/ea8/b7f6188e6fa11/idna-2.8-py2.py3-none-any.whl (58kB)\nCollecting certifi>=2017.4.17 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fd7/c7c74727ddcf0/certifi-2019.9.11-py2.py3-none-any.whl (154kB)\nCollecting chardet<3.1.0,>=3.0.2 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fc3/23ffcaeaed0e0/chardet-3.0.4-py2.py3-none-any.whl (133kB)\nCollecting webencodings (from bleach>=2.1.0->readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a0a/f1213f3c22264/webencodings-0.5.1-py2.py3-none-any.whl\nBuilding wheels for collected packages: hypothesis\n  Building wheel for hypothesis (setup.py): started\n  Building wheel for hypothesis (setup.py): finished with status 'done'\n  Created wheel for hypothesis: filename=hypothesis-4.37.0-cp27-none-any.whl size=271055 sha256=7410ee100bdb6bd109d02001b1124ebeffe8e460041427177e8c174b6df721b6\n  Stored in directory: /home/jan/.cache/pip/wheels/64/a7/46/6d377c485e5dd23aa68f7c3c804fa20df328cef882cc2fc3fb\nSuccessfully built hypothesis\nInstalling collected packages: pytz, typing, six, scandir, pathlib2, importlib-resources, smmap2, gitdb2, gitpython, webencodings, bleach, docutils, Pygments, readme-renderer, tqdm, urllib3, idna, certifi, chardet, requests, requests-toolbelt, pkginfo, twine, cudasetuptools, attrs, pyparsing, packaging, py, atomicwrites, funcsigs, more-itertools, zipp, configparser, contextlib2, importlib-metadata, pluggy, wcwidth, pytest, mock, pytest-mock, coverage, pytest-cov, enum34, hypothesis\nSuccessfully installed Pygments-2.4.2 atomicwrites-1.3.0 attrs-19.1.0 bleach-3.1.0 certifi-2019.9.11 chardet-3.0.4 configparser-4.0.2 contextlib2-0.6.0 coverage-4.5.4 cudasetuptools-0.2.24 docutils-0.15.2 enum34-1.1.6 funcsigs-1.0.2 gitdb2-2.0.6 gitpython-2.1.14 hypothesis-4.37.0 idna-2.8 importlib-metadata-0.23 importlib-resources-1.0.2 mock-3.0.5 more-itertools-5.0.0 packaging-19.2 pathlib2-2.3.5 pkginfo-1.5.0.1 pluggy-0.13.0 py-1.8.0 pyparsing-2.4.2 pytest-4.6.5 pytest-cov-2.7.1 pytest-mock-1.11.0 pytz-2019.2 readme-renderer-24.0 requests-2.22.0 requests-toolbelt-0.9.1 scandir-1.10.0 six-1.12.0 smmap2-2.0.5 tqdm-4.36.1 twine-1.15.0 typing-3.7.4.1 urllib3-1.25.6 wcwidth-0.1.7 webencodings-0.5.1 zipp-0.6.0\n",
+      "retcode": 0
+    },
+    {
+      "command": [
+        "/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3",
+        "-m",
+        "virtualenv",
+        "--no-download",
+        "--python",
+        "/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3",
+        "py36"
+      ],
+      "output": "Already using interpreter /home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3\nUsing real prefix '/usr'\nPath not in prefix '/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/include/python3.6m' '/usr'\nNew python executable in /home/jan/devel/cuda/atdiff/.tox/py36/bin/python3\nAlso creating executable in /home/jan/devel/cuda/atdiff/.tox/py36/bin/python\nInstalling setuptools, pip, wheel...\ndone.\n",
+      "retcode": 0
+    },
+    {
+      "command": [
+        "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pip",
+        "install",
+        "--trusted-host",
+        "10.17.65.203",
+        "--index-url",
+        "http://10.17.65.203/root/test",
+        "setuptools>=41.2.0",
+        "pip>=19.2.3",
+        "wheel>=0.33",
+        "cudasetuptools",
+        "pytest",
+        "pytest-mock",
+        "pytest-cov",
+        "hypothesis"
+      ],
+      "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nRequirement already satisfied: setuptools>=41.2.0 in ./.tox/py36/lib/python3.6/site-packages (41.2.0)\nRequirement already satisfied: pip>=19.2.3 in ./.tox/py36/lib/python3.6/site-packages (19.2.3)\nRequirement already satisfied: wheel>=0.33 in ./.tox/py36/lib/python3.6/site-packages (0.33.6)\nCollecting cudasetuptools\n  Downloading http://10.17.65.203/root/test/%2Bf/71d/30bba9b4b4efd/cudasetuptools-0.2.24-py2.py3-none-any.whl\nCollecting pytest\n  Downloading http://10.17.65.203/root/pypi/%2Bf/13c/1c9b22127a77f/pytest-5.2.0-py3-none-any.whl (226kB)\nCollecting pytest-mock\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a89/104018a4083b5/pytest_mock-1.11.0-py2.py3-none-any.whl\nCollecting pytest-cov\n  Downloading http://10.17.65.203/root/pypi/%2Bf/2b0/97cde81a302e1/pytest_cov-2.7.1-py2.py3-none-any.whl\nCollecting hypothesis\n  Downloading http://10.17.65.203/root/pypi/%2Bf/cad/6f6066883650a/hypothesis-4.37.0-py3-none-any.whl (271kB)\nCollecting gitpython (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/947/cc75913e7b6da/GitPython-3.0.2-py3-none-any.whl (453kB)\nCollecting importlib-resources (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6e2/783b2538bd5a1/importlib_resources-1.0.2-py2.py3-none-any.whl\nCollecting twine (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/531/9dd3e02ac73fc/twine-2.0.0-py3-none-any.whl\nCollecting pytz (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c89/4d57500a4cd2d/pytz-2019.2-py2.py3-none-any.whl (508kB)\nCollecting importlib-metadata>=0.12; python_version < \"3.8\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d5f/18a79777f3aa1/importlib_metadata-0.23-py2.py3-none-any.whl\nCollecting attrs>=17.4.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/69c/0dbf2ed392de1/attrs-19.1.0-py2.py3-none-any.whl\nCollecting pluggy<1.0,>=0.12 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/0db/4b7601aae1d35/pluggy-0.13.0-py2.py3-none-any.whl\nCollecting atomicwrites>=1.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/034/72c30eb2c5d1b/atomicwrites-1.3.0-py2.py3-none-any.whl\nCollecting packaging (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d95/51545c6d761f3/packaging-19.2-py2.py3-none-any.whl\nCollecting wcwidth (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f4e/be71925af7b40/wcwidth-0.1.7-py2.py3-none-any.whl\nCollecting more-itertools>=4.0.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/92b/8c4b06dac4f06/more_itertools-7.2.0-py3-none-any.whl (57kB)\nCollecting py>=1.5.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/64f/65755aee5b381/py-1.8.0-py2.py3-none-any.whl (83kB)\nCollecting coverage>=4.4 (from pytest-cov)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c0a/fd27bc0e307a1/coverage-4.5.4-cp36-cp36m-manylinux1_x86_64.whl (205kB)\nCollecting gitdb2>=2.0.0 (from gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/96b/bb507d765a7f5/gitdb2-2.0.6-py2.py3-none-any.whl (63kB)\nCollecting tqdm>=4.14 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/dd3/fcca8488bb1d4/tqdm-4.36.1-py2.py3-none-any.whl (52kB)\nCollecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/380/606e1d10dc85c/requests_toolbelt-0.9.1-py2.py3-none-any.whl (54kB)\nCollecting readme-renderer>=21.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c85/32b79afc0375a/readme_renderer-24.0-py2.py3-none-any.whl\nCollecting pkginfo>=1.4.2 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a6d/9e40ca61ad3eb/pkginfo-1.5.0.1-py2.py3-none-any.whl\nCollecting requests>=2.20 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9cf/5292fcd0f598c/requests-2.22.0-py2.py3-none-any.whl (57kB)\nCollecting zipp>=0.5 (from importlib-metadata>=0.12; python_version < \"3.8\"->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f06/903e9f1f43b12/zipp-0.6.0-py2.py3-none-any.whl\nCollecting pyparsing>=2.0.2 (from packaging->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d93/38df12903bbf5/pyparsing-2.4.2-py2.py3-none-any.whl (65kB)\nCollecting six (from packaging->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/335/0809f0555b11f/six-1.12.0-py2.py3-none-any.whl\nCollecting smmap2>=2.0.0 (from gitdb2>=2.0.0->gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/055/5a7bf4df71d1e/smmap2-2.0.5-py2.py3-none-any.whl\nCollecting docutils>=0.13.1 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6c4/f696463b79f1f/docutils-0.15.2-py3-none-any.whl (547kB)\nCollecting bleach>=2.1.0 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/213/336e49e102af2/bleach-3.1.0-py2.py3-none-any.whl (157kB)\nCollecting Pygments (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/71e/430bc85c88a43/Pygments-2.4.2-py2.py3-none-any.whl (883kB)\nCollecting chardet<3.1.0,>=3.0.2 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fc3/23ffcaeaed0e0/chardet-3.0.4-py2.py3-none-any.whl (133kB)\nCollecting idna<2.9,>=2.5 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/ea8/b7f6188e6fa11/idna-2.8-py2.py3-none-any.whl (58kB)\nCollecting certifi>=2017.4.17 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fd7/c7c74727ddcf0/certifi-2019.9.11-py2.py3-none-any.whl (154kB)\nCollecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/3de/946ffbed6e674/urllib3-1.25.6-py2.py3-none-any.whl (125kB)\nCollecting webencodings (from bleach>=2.1.0->readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a0a/f1213f3c22264/webencodings-0.5.1-py2.py3-none-any.whl\nInstalling collected packages: smmap2, gitdb2, gitpython, importlib-resources, tqdm, chardet, idna, certifi, urllib3, requests, requests-toolbelt, docutils, webencodings, six, bleach, Pygments, readme-renderer, pkginfo, twine, pytz, cudasetuptools, more-itertools, zipp, importlib-metadata, attrs, pluggy, atomicwrites, pyparsing, packaging, wcwidth, py, pytest, pytest-mock, coverage, pytest-cov, hypothesis\nSuccessfully installed Pygments-2.4.2 atomicwrites-1.3.0 attrs-19.1.0 bleach-3.1.0 certifi-2019.9.11 chardet-3.0.4 coverage-4.5.4 cudasetuptools-0.2.24 docutils-0.15.2 gitdb2-2.0.6 gitpython-3.0.2 hypothesis-4.37.0 idna-2.8 importlib-metadata-0.23 importlib-resources-1.0.2 more-itertools-7.2.0 packaging-19.2 pkginfo-1.5.0.1 pluggy-0.13.0 py-1.8.0 pyparsing-2.4.2 pytest-5.2.0 pytest-cov-2.7.1 pytest-mock-1.11.0 pytz-2019.2 readme-renderer-24.0 requests-2.22.0 requests-toolbelt-0.9.1 six-1.12.0 smmap2-2.0.5 tqdm-4.36.1 twine-2.0.0 urllib3-1.25.6 wcwidth-0.1.7 webencodings-0.5.1 zipp-0.6.0\n",
+      "retcode": 0
+    }
+  ],
+  "testenvs": {
+    "py27": {
+      "setup": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+            "setup.py",
+            "bdist_wheel",
+            "--dist-dir",
+            ".tox/dist"
+          ],
+          "output": "running bdist_wheel\nrunning build\nrunning build_py\ncreating build/lib.linux-x86_64-2.7\ncreating build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/terminal.py -> build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/__init__.py -> build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/__main__.py -> build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/_version.py -> build/lib.linux-x86_64-2.7/atdiff\ncreating build/lib.linux-x86_64-2.7/atdiff/metrics\ncopying src/atdiff/metrics/metrics.py -> build/lib.linux-x86_64-2.7/atdiff/metrics\ncopying src/atdiff/metrics/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/metrics\ncopying src/atdiff/metrics/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/metrics\ncreating build/lib.linux-x86_64-2.7/atdiff/runcmp\ncopying src/atdiff/runcmp/runcmp.py -> build/lib.linux-x86_64-2.7/atdiff/runcmp\ncopying src/atdiff/runcmp/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/runcmp\ncopying src/atdiff/runcmp/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/runcmp\ncreating build/lib.linux-x86_64-2.7/atdiff/reginfo\ncopying src/atdiff/reginfo/reginfo.py -> build/lib.linux-x86_64-2.7/atdiff/reginfo\ncopying src/atdiff/reginfo/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/reginfo\ncopying src/atdiff/reginfo/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/reginfo\ncreating build/lib.linux-x86_64-2.7/atdiff/promo\ncopying src/atdiff/promo/promo.py -> build/lib.linux-x86_64-2.7/atdiff/promo\ncopying src/atdiff/promo/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/promo\ncopying src/atdiff/promo/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/promo\nrunning egg_info\nwriting dependency_links to src/atdiff.egg-info/dependency_links.txt\nwriting requirements to src/atdiff.egg-info/requires.txt\nwriting src/atdiff.egg-info/PKG-INFO\nwriting entry points to src/atdiff.egg-info/entry_points.txt\nwriting top-level names to src/atdiff.egg-info/top_level.txt\nreading manifest file 'src/atdiff.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwriting manifest file 'src/atdiff.egg-info/SOURCES.txt'\ninstalling to build/bdist.linux-x86_64/wheel\nrunning install\nrunning install_lib\ncreating build/bdist.linux-x86_64\ncreating build/bdist.linux-x86_64/wheel\ncreating build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib.linux-x86_64-2.7/atdiff/metrics/metrics.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib.linux-x86_64-2.7/atdiff/metrics/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib.linux-x86_64-2.7/atdiff/metrics/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncreating build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/runcmp/runcmp.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/runcmp/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/runcmp/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/terminal.py -> build/bdist.linux-x86_64/wheel/atdiff\ncopying build/lib.linux-x86_64-2.7/atdiff/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/reginfo/reginfo.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/reginfo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/reginfo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/promo/promo.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/promo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/promo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/_version.py -> build/bdist.linux-x86_64/wheel/atdiff\nrunning install_egg_info\nCopying src/atdiff.egg-info to build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post190924083133-py2.7.egg-info\nrunning install_scripts\ncreating build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post190924083133.dist-info/WHEEL\ncreating '.tox/dist/atdiff-0.2.5.post190924083133-py2.py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it\nadding 'atdiff/__init__.py'\nadding 'atdiff/__main__.py'\nadding 'atdiff/_version.py'\nadding 'atdiff/terminal.py'\nadding 'atdiff/metrics/__init__.py'\nadding 'atdiff/metrics/__main__.py'\nadding 'atdiff/metrics/metrics.py'\nadding 'atdiff/promo/__init__.py'\nadding 'atdiff/promo/__main__.py'\nadding 'atdiff/promo/promo.py'\nadding 'atdiff/reginfo/__init__.py'\nadding 'atdiff/reginfo/__main__.py'\nadding 'atdiff/reginfo/reginfo.py'\nadding 'atdiff/runcmp/__init__.py'\nadding 'atdiff/runcmp/__main__.py'\nadding 'atdiff/runcmp/runcmp.py'\nadding 'atdiff-0.2.5.post190924083133.dist-info/METADATA'\nadding 'atdiff-0.2.5.post190924083133.dist-info/WHEEL'\nadding 'atdiff-0.2.5.post190924083133.dist-info/entry_points.txt'\nadding 'atdiff-0.2.5.post190924083133.dist-info/top_level.txt'\nadding 'atdiff-0.2.5.post190924083133.dist-info/zip-safe'\nadding 'atdiff-0.2.5.post190924083133.dist-info/RECORD'\nremoving build/bdist.linux-x86_64/wheel\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3",
+            "-m",
+            "virtualenv",
+            "--no-download",
+            "--python",
+            "/usr/bin/python2.7",
+            "py27"
+          ],
+          "output": "Running virtualenv with interpreter /usr/bin/python2.7\nAlready using interpreter /usr/bin/python2.7\nNew python executable in /home/jan/devel/cuda/atdiff/.tox/py27/bin/python2.7\nAlso creating executable in /home/jan/devel/cuda/atdiff/.tox/py27/bin/python\nInstalling setuptools, pip, wheel...\ndone.\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "setuptools>=41.2.0",
+            "pip>=19.2.3",
+            "wheel>=0.33",
+            "cudasetuptools",
+            "pytest",
+            "pytest-mock",
+            "pytest-cov",
+            "hypothesis"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nRequirement already satisfied: setuptools>=41.2.0 in ./.tox/py27/lib/python2.7/site-packages (41.2.0)\nRequirement already satisfied: pip>=19.2.3 in ./.tox/py27/lib/python2.7/site-packages (19.2.3)\nRequirement already satisfied: wheel>=0.33 in ./.tox/py27/lib/python2.7/site-packages (0.33.6)\nCollecting cudasetuptools\n  Downloading http://10.17.65.203/root/test/%2Bf/71d/30bba9b4b4efd/cudasetuptools-0.2.24-py2.py3-none-any.whl\nCollecting pytest\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d10/0a02770f665f5/pytest-4.6.5-py2.py3-none-any.whl (230kB)\nCollecting pytest-mock\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a89/104018a4083b5/pytest_mock-1.11.0-py2.py3-none-any.whl\nCollecting pytest-cov\n  Downloading http://10.17.65.203/root/pypi/%2Bf/2b0/97cde81a302e1/pytest_cov-2.7.1-py2.py3-none-any.whl\nCollecting hypothesis\nCollecting pytz (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c89/4d57500a4cd2d/pytz-2019.2-py2.py3-none-any.whl (508kB)\nCollecting importlib-resources (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6e2/783b2538bd5a1/importlib_resources-1.0.2-py2.py3-none-any.whl\nCollecting gitpython (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/178/15b908454e496/GitPython-2.1.14-py2.py3-none-any.whl (452kB)\nCollecting twine (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/630/fadd6e342e725/twine-1.15.0-py2.py3-none-any.whl\nCollecting attrs>=17.4.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/69c/0dbf2ed392de1/attrs-19.1.0-py2.py3-none-any.whl\nCollecting packaging (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d95/51545c6d761f3/packaging-19.2-py2.py3-none-any.whl\nCollecting py>=1.5.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/64f/65755aee5b381/py-1.8.0-py2.py3-none-any.whl (83kB)\nCollecting atomicwrites>=1.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/034/72c30eb2c5d1b/atomicwrites-1.3.0-py2.py3-none-any.whl\nCollecting funcsigs>=1.0; python_version < \"3.0\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/330/cc27ccbf7f1e9/funcsigs-1.0.2-py2.py3-none-any.whl\nCollecting importlib-metadata>=0.12 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d5f/18a79777f3aa1/importlib_metadata-0.23-py2.py3-none-any.whl\nCollecting pathlib2>=2.2.0; python_version < \"3.6\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/0ec/8205a157c80d7/pathlib2-2.3.5-py2.py3-none-any.whl\nCollecting more-itertools<6.0.0,>=4.0.0; python_version <= \"2.7\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c0a/5785b1109a6bd/more_itertools-5.0.0-py2-none-any.whl (52kB)\nCollecting pluggy<1.0,>=0.12 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/0db/4b7601aae1d35/pluggy-0.13.0-py2.py3-none-any.whl\nCollecting six>=1.10.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/335/0809f0555b11f/six-1.12.0-py2.py3-none-any.whl\nCollecting wcwidth (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f4e/be71925af7b40/wcwidth-0.1.7-py2.py3-none-any.whl\nCollecting mock; python_version < \"3.0\" (from pytest-mock)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d15/7e52d4e5b938c/mock-3.0.5-py2.py3-none-any.whl\nCollecting coverage>=4.4 (from pytest-cov)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/089/07593569fe59b/coverage-4.5.4-cp27-cp27mu-manylinux1_x86_64.whl (202kB)\nCollecting enum34; python_version == \"2.7\" (from hypothesis)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6bd/0f6ad48ec2aa1/enum34-1.1.6-py2-none-any.whl\nCollecting typing; python_version < \"3.5\" (from importlib-resources->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c8c/abb5ab8945cd2/typing-3.7.4.1-py2-none-any.whl\nCollecting gitdb2>=2.0.0 (from gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/96b/bb507d765a7f5/gitdb2-2.0.6-py2.py3-none-any.whl (63kB)\nCollecting readme-renderer>=21.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c85/32b79afc0375a/readme_renderer-24.0-py2.py3-none-any.whl\nCollecting tqdm>=4.14 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/dd3/fcca8488bb1d4/tqdm-4.36.1-py2.py3-none-any.whl (52kB)\nCollecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/380/606e1d10dc85c/requests_toolbelt-0.9.1-py2.py3-none-any.whl (54kB)\nCollecting pkginfo>=1.4.2 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a6d/9e40ca61ad3eb/pkginfo-1.5.0.1-py2.py3-none-any.whl\nCollecting requests!=2.15,!=2.16,>=2.5.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9cf/5292fcd0f598c/requests-2.22.0-py2.py3-none-any.whl (57kB)\nCollecting pyparsing>=2.0.2 (from packaging->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d93/38df12903bbf5/pyparsing-2.4.2-py2.py3-none-any.whl (65kB)\nCollecting zipp>=0.5 (from importlib-metadata>=0.12->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f06/903e9f1f43b12/zipp-0.6.0-py2.py3-none-any.whl\nCollecting configparser>=3.5; python_version < \"3\" (from importlib-metadata>=0.12->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/254/c1d9c79f60c45/configparser-4.0.2-py2.py3-none-any.whl\nCollecting contextlib2; python_version < \"3\" (from importlib-metadata>=0.12->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9d2/c67f18c1f9b6d/contextlib2-0.6.0-py2.py3-none-any.whl\nCollecting scandir; python_version < \"3.5\" (from pathlib2>=2.2.0; python_version < \"3.6\"->pytest)\nCollecting smmap2>=2.0.0 (from gitdb2>=2.0.0->gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/055/5a7bf4df71d1e/smmap2-2.0.5-py2.py3-none-any.whl\nCollecting bleach>=2.1.0 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/213/336e49e102af2/bleach-3.1.0-py2.py3-none-any.whl (157kB)\nCollecting docutils>=0.13.1 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9e4/d7ecfc600058e/docutils-0.15.2-py2-none-any.whl (548kB)\nCollecting Pygments (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/71e/430bc85c88a43/Pygments-2.4.2-py2.py3-none-any.whl (883kB)\nCollecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/3de/946ffbed6e674/urllib3-1.25.6-py2.py3-none-any.whl (125kB)\nCollecting idna<2.9,>=2.5 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/ea8/b7f6188e6fa11/idna-2.8-py2.py3-none-any.whl (58kB)\nCollecting certifi>=2017.4.17 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fd7/c7c74727ddcf0/certifi-2019.9.11-py2.py3-none-any.whl (154kB)\nCollecting chardet<3.1.0,>=3.0.2 (from requests!=2.15,!=2.16,>=2.5.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fc3/23ffcaeaed0e0/chardet-3.0.4-py2.py3-none-any.whl (133kB)\nCollecting webencodings (from bleach>=2.1.0->readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a0a/f1213f3c22264/webencodings-0.5.1-py2.py3-none-any.whl\nInstalling collected packages: pytz, typing, six, scandir, pathlib2, importlib-resources, smmap2, gitdb2, gitpython, webencodings, bleach, docutils, Pygments, readme-renderer, tqdm, urllib3, idna, certifi, chardet, requests, requests-toolbelt, pkginfo, twine, cudasetuptools, attrs, pyparsing, packaging, py, atomicwrites, funcsigs, more-itertools, zipp, configparser, contextlib2, importlib-metadata, pluggy, wcwidth, pytest, mock, pytest-mock, coverage, pytest-cov, enum34, hypothesis\nSuccessfully installed Pygments-2.4.2 atomicwrites-1.3.0 attrs-19.1.0 bleach-3.1.0 certifi-2019.9.11 chardet-3.0.4 configparser-4.0.2 contextlib2-0.6.0 coverage-4.5.4 cudasetuptools-0.2.24 docutils-0.15.2 enum34-1.1.6 funcsigs-1.0.2 gitdb2-2.0.6 gitpython-2.1.14 hypothesis-4.37.0 idna-2.8 importlib-metadata-0.23 importlib-resources-1.0.2 mock-3.0.5 more-itertools-5.0.0 packaging-19.2 pathlib2-2.3.5 pkginfo-1.5.0.1 pluggy-0.13.0 py-1.8.0 pyparsing-2.4.2 pytest-4.6.5 pytest-cov-2.7.1 pytest-mock-1.11.0 pytz-2019.2 readme-renderer-24.0 requests-2.22.0 requests-toolbelt-0.9.1 scandir-1.10.0 six-1.12.0 smmap2-2.0.5 tqdm-4.36.1 twine-1.15.0 typing-3.7.4.1 urllib3-1.25.6 wcwidth-0.1.7 webencodings-0.5.1 zipp-0.6.0\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "--exists-action",
+            "w",
+            ".tox/.tmp/package/1/atdiff-0.2.5.post190924083133-py2.py3-none-any.whl"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nProcessing ./.tox/.tmp/package/1/atdiff-0.2.5.post190924083133-py2.py3-none-any.whl\nCollecting pymongo<3.5,>3.3 (from atdiff==0.2.5.post190924083133)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/8e0/b5366f08875e6/pymongo-3.4.0-cp27-cp27mu-manylinux1_x86_64.whl (362kB)\nCollecting tabulate (from atdiff==0.2.5.post190924083133)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d00/97023658d4dea/tabulate-0.8.5.tar.gz (45kB)\nCollecting pyperclip (from atdiff==0.2.5.post190924083133)\nBuilding wheels for collected packages: tabulate\n  Building wheel for tabulate (setup.py): started\n  Building wheel for tabulate (setup.py): finished with status 'done'\n  Created wheel for tabulate: filename=tabulate-0.8.5-cp27-none-any.whl size=23257 sha256=fdde176083be3231a58a85ab21f5527722a0697d212609a0d4027d09f1d7b18a\n  Stored in directory: /home/jan/.cache/pip/wheels/2c/d8/c5/97b44d3594657e68e72fd0f6d260b886568dc2a19c711021c7\nSuccessfully built tabulate\nInstalling collected packages: pymongo, tabulate, pyperclip, atdiff\nSuccessfully installed atdiff-0.2.5.post190924083133 pymongo-3.4.0 pyperclip-1.7.0 tabulate-0.8.5\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+            "-m",
+            "pip",
+            "freeze"
+          ],
+          "output": "atdiff==0.2.5.post190924083133\natomicwrites==1.3.0\nattrs==19.1.0\nbleach==3.1.0\ncertifi==2019.9.11\nchardet==3.0.4\nconfigparser==4.0.2\ncontextlib2==0.6.0\ncoverage==4.5.4\ncudasetuptools==0.2.24\ndocutils==0.15.2\nenum34==1.1.6\nfuncsigs==1.0.2\ngitdb2==2.0.6\nGitPython==2.1.14\nhypothesis==4.37.0\nidna==2.8\nimportlib-metadata==0.23\nimportlib-resources==1.0.2\nmock==3.0.5\nmore-itertools==5.0.0\npackaging==19.2\npathlib2==2.3.5\npkginfo==1.5.0.1\npluggy==0.13.0\npy==1.8.0\nPygments==2.4.2\npymongo==3.4.0\npyparsing==2.4.2\npyperclip==1.7.0\npytest==4.6.5\npytest-cov==2.7.1\npytest-mock==1.11.0\npytz==2019.2\nreadme-renderer==24.0\nrequests==2.22.0\nrequests-toolbelt==0.9.1\nscandir==1.10.0\nsix==1.12.0\nsmmap2==2.0.5\ntabulate==0.8.5\ntqdm==4.36.1\ntwine==1.15.0\ntyping==3.7.4.1\nurllib3==1.25.6\nwcwidth==0.1.7\nwebencodings==0.5.1\nzipp==0.6.0\n",
+          "retcode": 0
+        }
+      ],
+      "python": {
+        "executable": "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+        "name": "python",
+        "version_info": [
+          2,
+          7,
+          15,
+          "final",
+          0
+        ],
+        "sysplatform": "linux2",
+        "version": "2.7.15+ (default, Jul  9 2019, 16:51:35) \n[GCC 7.4.0]",
+        "is_64": true
+      },
+      "installpkg": {
+        "sha256": "6b5da2de0a405e8e75ebcc1f2d10f14efc2c399696a6993ad6bf9ae47ebc1c03",
+        "basename": "atdiff-0.2.5.post190924083133-py2.py3-none-any.whl"
+      },
+      "installed_packages": [
+        "atdiff==0.2.5.post190924083133",
+        "atomicwrites==1.3.0",
+        "attrs==19.1.0",
+        "bleach==3.1.0",
+        "certifi==2019.9.11",
+        "chardet==3.0.4",
+        "configparser==4.0.2",
+        "contextlib2==0.6.0",
+        "coverage==4.5.4",
+        "cudasetuptools==0.2.24",
+        "docutils==0.15.2",
+        "enum34==1.1.6",
+        "funcsigs==1.0.2",
+        "gitdb2==2.0.6",
+        "GitPython==2.1.14",
+        "hypothesis==4.37.0",
+        "idna==2.8",
+        "importlib-metadata==0.23",
+        "importlib-resources==1.0.2",
+        "mock==3.0.5",
+        "more-itertools==5.0.0",
+        "packaging==19.2",
+        "pathlib2==2.3.5",
+        "pkginfo==1.5.0.1",
+        "pluggy==0.13.0",
+        "py==1.8.0",
+        "Pygments==2.4.2",
+        "pymongo==3.4.0",
+        "pyparsing==2.4.2",
+        "pyperclip==1.7.0",
+        "pytest==4.6.5",
+        "pytest-cov==2.7.1",
+        "pytest-mock==1.11.0",
+        "pytz==2019.2",
+        "readme-renderer==24.0",
+        "requests==2.22.0",
+        "requests-toolbelt==0.9.1",
+        "scandir==1.10.0",
+        "six==1.12.0",
+        "smmap2==2.0.5",
+        "tabulate==0.8.5",
+        "tqdm==4.36.1",
+        "twine==1.15.0",
+        "typing==3.7.4.1",
+        "urllib3==1.25.6",
+        "wcwidth==0.1.7",
+        "webencodings==0.5.1",
+        "zipp==0.6.0"
+      ],
+      "test": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pytest",
+            "-vv",
+            "tests"
+          ],
+          "output": "============================= test session starts ==============================\nplatform linux2 -- Python 2.7.15+, pytest-4.6.5, py-1.8.0, pluggy-0.13.0 -- /home/jan/devel/cuda/atdiff/.tox/py27/bin/python2.7\ncachedir: .tox/py27/.pytest_cache\nhypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/jan/devel/cuda/atdiff/.hypothesis/examples')\nrootdir: /home/jan/devel/cuda/atdiff\nplugins: mock-1.11.0, cov-2.7.1, hypothesis-4.37.0\ncollecting ... collected 7 items\n\ntests/test_general.py::test_help_needed PASSED                           [ 14%]\ntests/test_general.py::test_version_arg PASSED                           [ 28%]\ntests/test_general.py::test_load_file PASSED                             [ 42%]\ntests/test_general.py::test_main_runcomp PASSED                          [ 57%]\ntests/test_general.py::test_load_mongo PASSED                            [ 71%]\ntests/test_general.py::test_singlemongo PASSED                           [ 85%]\ntests/test_general.py::test_runcmp_formats_present FAILED                [100%]\n\n=================================== FAILURES ===================================\n_________________________ test_runcmp_formats_present __________________________\n\ncapsys = <_pytest.capture.CaptureFixture object at 0x7fcbb6b96e90>\n\n    def test_runcmp_formats_present(capsys):\n>       atdiff.runcmp.__main__.main()\n\ntests/test_general.py:107: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n.tox/py27/local/lib/python2.7/site-packages/atdiff/runcmp/__main__.py:60: in main\n    [\"tablefmt=\", \"clipboard-output\", \"review-columns\", \"print-links\"],\n/usr/lib/python2.7/getopt.py:133: in gnu_getopt\n    opts, args = do_shorts(opts, args[0][1:], shortopts, args[1:])\n/usr/lib/python2.7/getopt.py:190: in do_shorts\n    if short_has_arg(opt, shortopts):\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nopt = 'v', shortopts = 'f:t:cCu'\n\n    def short_has_arg(opt, shortopts):\n        for i in range(len(shortopts)):\n            if opt == shortopts[i] != ':':\n                return shortopts.startswith(':', i+1)\n>       raise GetoptError('option -%s not recognized' % opt, opt)\nE       GetoptError: option -v not recognized\n\n/usr/lib/python2.7/getopt.py:206: GetoptError\n====================== 1 failed, 6 passed in 1.36 seconds ======================\n",
+          "retcode": 1
+        }
+      ]
+    },
+    "py36": {
+      "setup": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+            "setup.py",
+            "bdist_wheel",
+            "--dist-dir",
+            ".tox/dist"
+          ],
+          "output": "running bdist_wheel\nrunning build\nrunning build_py\ncreating build/lib\ncreating build/lib/atdiff\ncopying src/atdiff/terminal.py -> build/lib/atdiff\ncopying src/atdiff/__init__.py -> build/lib/atdiff\ncopying src/atdiff/__main__.py -> build/lib/atdiff\ncopying src/atdiff/_version.py -> build/lib/atdiff\ncreating build/lib/atdiff/metrics\ncopying src/atdiff/metrics/metrics.py -> build/lib/atdiff/metrics\ncopying src/atdiff/metrics/__init__.py -> build/lib/atdiff/metrics\ncopying src/atdiff/metrics/__main__.py -> build/lib/atdiff/metrics\ncreating build/lib/atdiff/runcmp\ncopying src/atdiff/runcmp/runcmp.py -> build/lib/atdiff/runcmp\ncopying src/atdiff/runcmp/__init__.py -> build/lib/atdiff/runcmp\ncopying src/atdiff/runcmp/__main__.py -> build/lib/atdiff/runcmp\ncreating build/lib/atdiff/reginfo\ncopying src/atdiff/reginfo/reginfo.py -> build/lib/atdiff/reginfo\ncopying src/atdiff/reginfo/__init__.py -> build/lib/atdiff/reginfo\ncopying src/atdiff/reginfo/__main__.py -> build/lib/atdiff/reginfo\ncreating build/lib/atdiff/promo\ncopying src/atdiff/promo/promo.py -> build/lib/atdiff/promo\ncopying src/atdiff/promo/__init__.py -> build/lib/atdiff/promo\ncopying src/atdiff/promo/__main__.py -> build/lib/atdiff/promo\nrunning egg_info\nwriting src/atdiff.egg-info/PKG-INFO\nwriting dependency_links to src/atdiff.egg-info/dependency_links.txt\nwriting entry points to src/atdiff.egg-info/entry_points.txt\nwriting requirements to src/atdiff.egg-info/requires.txt\nwriting top-level names to src/atdiff.egg-info/top_level.txt\nreading manifest file 'src/atdiff.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwriting manifest file 'src/atdiff.egg-info/SOURCES.txt'\ninstalling to build/bdist.linux-x86_64/wheel\nrunning install\nrunning install_lib\ncreating build/bdist.linux-x86_64\ncreating build/bdist.linux-x86_64/wheel\ncreating build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib/atdiff/metrics/metrics.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib/atdiff/metrics/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib/atdiff/metrics/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncreating build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/runcmp/runcmp.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/runcmp/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/runcmp/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/terminal.py -> build/bdist.linux-x86_64/wheel/atdiff\ncopying build/lib/atdiff/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/reginfo/reginfo.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/reginfo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/reginfo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/promo/promo.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/promo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/promo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/_version.py -> build/bdist.linux-x86_64/wheel/atdiff\nrunning install_egg_info\nCopying src/atdiff.egg-info to build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post190924083133-py3.6.egg-info\nrunning install_scripts\ncreating build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post190924083133.dist-info/WHEEL\ncreating '.tox/dist/atdiff-0.2.5.post190924083133-py2.py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it\nadding 'atdiff/__init__.py'\nadding 'atdiff/__main__.py'\nadding 'atdiff/_version.py'\nadding 'atdiff/terminal.py'\nadding 'atdiff/metrics/__init__.py'\nadding 'atdiff/metrics/__main__.py'\nadding 'atdiff/metrics/metrics.py'\nadding 'atdiff/promo/__init__.py'\nadding 'atdiff/promo/__main__.py'\nadding 'atdiff/promo/promo.py'\nadding 'atdiff/reginfo/__init__.py'\nadding 'atdiff/reginfo/__main__.py'\nadding 'atdiff/reginfo/reginfo.py'\nadding 'atdiff/runcmp/__init__.py'\nadding 'atdiff/runcmp/__main__.py'\nadding 'atdiff/runcmp/runcmp.py'\nadding 'atdiff-0.2.5.post190924083133.dist-info/METADATA'\nadding 'atdiff-0.2.5.post190924083133.dist-info/WHEEL'\nadding 'atdiff-0.2.5.post190924083133.dist-info/entry_points.txt'\nadding 'atdiff-0.2.5.post190924083133.dist-info/top_level.txt'\nadding 'atdiff-0.2.5.post190924083133.dist-info/zip-safe'\nadding 'atdiff-0.2.5.post190924083133.dist-info/RECORD'\nremoving build/bdist.linux-x86_64/wheel\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3",
+            "-m",
+            "virtualenv",
+            "--no-download",
+            "--python",
+            "/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3",
+            "py36"
+          ],
+          "output": "Already using interpreter /home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/bin/python3\nUsing real prefix '/usr'\nPath not in prefix '/home/jan/devel/cuda/atdiff/.direnv/python-3.6.8/include/python3.6m' '/usr'\nNew python executable in /home/jan/devel/cuda/atdiff/.tox/py36/bin/python3\nAlso creating executable in /home/jan/devel/cuda/atdiff/.tox/py36/bin/python\nInstalling setuptools, pip, wheel...\ndone.\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "setuptools>=41.2.0",
+            "pip>=19.2.3",
+            "wheel>=0.33",
+            "cudasetuptools",
+            "pytest",
+            "pytest-mock",
+            "pytest-cov",
+            "hypothesis"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nRequirement already satisfied: setuptools>=41.2.0 in ./.tox/py36/lib/python3.6/site-packages (41.2.0)\nRequirement already satisfied: pip>=19.2.3 in ./.tox/py36/lib/python3.6/site-packages (19.2.3)\nRequirement already satisfied: wheel>=0.33 in ./.tox/py36/lib/python3.6/site-packages (0.33.6)\nCollecting cudasetuptools\n  Downloading http://10.17.65.203/root/test/%2Bf/71d/30bba9b4b4efd/cudasetuptools-0.2.24-py2.py3-none-any.whl\nCollecting pytest\n  Downloading http://10.17.65.203/root/pypi/%2Bf/13c/1c9b22127a77f/pytest-5.2.0-py3-none-any.whl (226kB)\nCollecting pytest-mock\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a89/104018a4083b5/pytest_mock-1.11.0-py2.py3-none-any.whl\nCollecting pytest-cov\n  Downloading http://10.17.65.203/root/pypi/%2Bf/2b0/97cde81a302e1/pytest_cov-2.7.1-py2.py3-none-any.whl\nCollecting hypothesis\n  Downloading http://10.17.65.203/root/pypi/%2Bf/cad/6f6066883650a/hypothesis-4.37.0-py3-none-any.whl (271kB)\nCollecting gitpython (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/947/cc75913e7b6da/GitPython-3.0.2-py3-none-any.whl (453kB)\nCollecting importlib-resources (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6e2/783b2538bd5a1/importlib_resources-1.0.2-py2.py3-none-any.whl\nCollecting twine (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/531/9dd3e02ac73fc/twine-2.0.0-py3-none-any.whl\nCollecting pytz (from cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c89/4d57500a4cd2d/pytz-2019.2-py2.py3-none-any.whl (508kB)\nCollecting importlib-metadata>=0.12; python_version < \"3.8\" (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d5f/18a79777f3aa1/importlib_metadata-0.23-py2.py3-none-any.whl\nCollecting attrs>=17.4.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/69c/0dbf2ed392de1/attrs-19.1.0-py2.py3-none-any.whl\nCollecting pluggy<1.0,>=0.12 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/0db/4b7601aae1d35/pluggy-0.13.0-py2.py3-none-any.whl\nCollecting atomicwrites>=1.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/034/72c30eb2c5d1b/atomicwrites-1.3.0-py2.py3-none-any.whl\nCollecting packaging (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d95/51545c6d761f3/packaging-19.2-py2.py3-none-any.whl\nCollecting wcwidth (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f4e/be71925af7b40/wcwidth-0.1.7-py2.py3-none-any.whl\nCollecting more-itertools>=4.0.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/92b/8c4b06dac4f06/more_itertools-7.2.0-py3-none-any.whl (57kB)\nCollecting py>=1.5.0 (from pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/64f/65755aee5b381/py-1.8.0-py2.py3-none-any.whl (83kB)\nCollecting coverage>=4.4 (from pytest-cov)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c0a/fd27bc0e307a1/coverage-4.5.4-cp36-cp36m-manylinux1_x86_64.whl (205kB)\nCollecting gitdb2>=2.0.0 (from gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/96b/bb507d765a7f5/gitdb2-2.0.6-py2.py3-none-any.whl (63kB)\nCollecting tqdm>=4.14 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/dd3/fcca8488bb1d4/tqdm-4.36.1-py2.py3-none-any.whl (52kB)\nCollecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/380/606e1d10dc85c/requests_toolbelt-0.9.1-py2.py3-none-any.whl (54kB)\nCollecting readme-renderer>=21.0 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/c85/32b79afc0375a/readme_renderer-24.0-py2.py3-none-any.whl\nCollecting pkginfo>=1.4.2 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a6d/9e40ca61ad3eb/pkginfo-1.5.0.1-py2.py3-none-any.whl\nCollecting requests>=2.20 (from twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/9cf/5292fcd0f598c/requests-2.22.0-py2.py3-none-any.whl (57kB)\nCollecting zipp>=0.5 (from importlib-metadata>=0.12; python_version < \"3.8\"->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/f06/903e9f1f43b12/zipp-0.6.0-py2.py3-none-any.whl\nCollecting pyparsing>=2.0.2 (from packaging->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d93/38df12903bbf5/pyparsing-2.4.2-py2.py3-none-any.whl (65kB)\nCollecting six (from packaging->pytest)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/335/0809f0555b11f/six-1.12.0-py2.py3-none-any.whl\nCollecting smmap2>=2.0.0 (from gitdb2>=2.0.0->gitpython->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/055/5a7bf4df71d1e/smmap2-2.0.5-py2.py3-none-any.whl\nCollecting docutils>=0.13.1 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/6c4/f696463b79f1f/docutils-0.15.2-py3-none-any.whl (547kB)\nCollecting bleach>=2.1.0 (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/213/336e49e102af2/bleach-3.1.0-py2.py3-none-any.whl (157kB)\nCollecting Pygments (from readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/71e/430bc85c88a43/Pygments-2.4.2-py2.py3-none-any.whl (883kB)\nCollecting chardet<3.1.0,>=3.0.2 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fc3/23ffcaeaed0e0/chardet-3.0.4-py2.py3-none-any.whl (133kB)\nCollecting idna<2.9,>=2.5 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/ea8/b7f6188e6fa11/idna-2.8-py2.py3-none-any.whl (58kB)\nCollecting certifi>=2017.4.17 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/fd7/c7c74727ddcf0/certifi-2019.9.11-py2.py3-none-any.whl (154kB)\nCollecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests>=2.20->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/3de/946ffbed6e674/urllib3-1.25.6-py2.py3-none-any.whl (125kB)\nCollecting webencodings (from bleach>=2.1.0->readme-renderer>=21.0->twine->cudasetuptools)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/a0a/f1213f3c22264/webencodings-0.5.1-py2.py3-none-any.whl\nInstalling collected packages: smmap2, gitdb2, gitpython, importlib-resources, tqdm, chardet, idna, certifi, urllib3, requests, requests-toolbelt, docutils, webencodings, six, bleach, Pygments, readme-renderer, pkginfo, twine, pytz, cudasetuptools, more-itertools, zipp, importlib-metadata, attrs, pluggy, atomicwrites, pyparsing, packaging, wcwidth, py, pytest, pytest-mock, coverage, pytest-cov, hypothesis\nSuccessfully installed Pygments-2.4.2 atomicwrites-1.3.0 attrs-19.1.0 bleach-3.1.0 certifi-2019.9.11 chardet-3.0.4 coverage-4.5.4 cudasetuptools-0.2.24 docutils-0.15.2 gitdb2-2.0.6 gitpython-3.0.2 hypothesis-4.37.0 idna-2.8 importlib-metadata-0.23 importlib-resources-1.0.2 more-itertools-7.2.0 packaging-19.2 pkginfo-1.5.0.1 pluggy-0.13.0 py-1.8.0 pyparsing-2.4.2 pytest-5.2.0 pytest-cov-2.7.1 pytest-mock-1.11.0 pytz-2019.2 readme-renderer-24.0 requests-2.22.0 requests-toolbelt-0.9.1 six-1.12.0 smmap2-2.0.5 tqdm-4.36.1 twine-2.0.0 urllib3-1.25.6 wcwidth-0.1.7 webencodings-0.5.1 zipp-0.6.0\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "--exists-action",
+            "w",
+            ".tox/.tmp/package/2/atdiff-0.2.5.post190924083133-py2.py3-none-any.whl"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nProcessing ./.tox/.tmp/package/2/atdiff-0.2.5.post190924083133-py2.py3-none-any.whl\nCollecting pymongo<3.5,>3.3 (from atdiff==0.2.5.post190924083133)\nCollecting tabulate (from atdiff==0.2.5.post190924083133)\n  Downloading http://10.17.65.203/root/pypi/%2Bf/d00/97023658d4dea/tabulate-0.8.5.tar.gz (45kB)\nCollecting pyperclip (from atdiff==0.2.5.post190924083133)\nBuilding wheels for collected packages: tabulate\n  Building wheel for tabulate (setup.py): started\n  Building wheel for tabulate (setup.py): finished with status 'done'\n  Created wheel for tabulate: filename=tabulate-0.8.5-cp36-none-any.whl size=23255 sha256=cb3de0a4ca029ed150ccd2919d257dcfc995e8609e3b4edb22cf78f75b688fd4\n  Stored in directory: /home/jan/.cache/pip/wheels/2c/d8/c5/97b44d3594657e68e72fd0f6d260b886568dc2a19c711021c7\nSuccessfully built tabulate\nInstalling collected packages: pymongo, tabulate, pyperclip, atdiff\nSuccessfully installed atdiff-0.2.5.post190924083133 pymongo-3.4.0 pyperclip-1.7.0 tabulate-0.8.5\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+            "-m",
+            "pip",
+            "freeze"
+          ],
+          "output": "atdiff==0.2.5.post190924083133\natomicwrites==1.3.0\nattrs==19.1.0\nbleach==3.1.0\ncertifi==2019.9.11\nchardet==3.0.4\ncoverage==4.5.4\ncudasetuptools==0.2.24\ndocutils==0.15.2\ngitdb2==2.0.6\nGitPython==3.0.2\nhypothesis==4.37.0\nidna==2.8\nimportlib-metadata==0.23\nimportlib-resources==1.0.2\nmore-itertools==7.2.0\npackaging==19.2\npkginfo==1.5.0.1\npluggy==0.13.0\npy==1.8.0\nPygments==2.4.2\npymongo==3.4.0\npyparsing==2.4.2\npyperclip==1.7.0\npytest==5.2.0\npytest-cov==2.7.1\npytest-mock==1.11.0\npytz==2019.2\nreadme-renderer==24.0\nrequests==2.22.0\nrequests-toolbelt==0.9.1\nsix==1.12.0\nsmmap2==2.0.5\ntabulate==0.8.5\ntqdm==4.36.1\ntwine==2.0.0\nurllib3==1.25.6\nwcwidth==0.1.7\nwebencodings==0.5.1\nzipp==0.6.0\n",
+          "retcode": 0
+        }
+      ],
+      "python": {
+        "executable": "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+        "name": "python",
+        "version_info": [
+          3,
+          6,
+          8,
+          "final",
+          0
+        ],
+        "version": "3.6.8 (default, Aug 20 2019, 17:12:48) \n[GCC 8.3.0]",
+        "is_64": true,
+        "sysplatform": "linux"
+      },
+      "installpkg": {
+        "sha256": "a990d44f41726607b026655b43166cdb1c3d73e1947d88d805c4c609edff2f39",
+        "basename": "atdiff-0.2.5.post190924083133-py2.py3-none-any.whl"
+      },
+      "installed_packages": [
+        "atdiff==0.2.5.post190924083133",
+        "atomicwrites==1.3.0",
+        "attrs==19.1.0",
+        "bleach==3.1.0",
+        "certifi==2019.9.11",
+        "chardet==3.0.4",
+        "coverage==4.5.4",
+        "cudasetuptools==0.2.24",
+        "docutils==0.15.2",
+        "gitdb2==2.0.6",
+        "GitPython==3.0.2",
+        "hypothesis==4.37.0",
+        "idna==2.8",
+        "importlib-metadata==0.23",
+        "importlib-resources==1.0.2",
+        "more-itertools==7.2.0",
+        "packaging==19.2",
+        "pkginfo==1.5.0.1",
+        "pluggy==0.13.0",
+        "py==1.8.0",
+        "Pygments==2.4.2",
+        "pymongo==3.4.0",
+        "pyparsing==2.4.2",
+        "pyperclip==1.7.0",
+        "pytest==5.2.0",
+        "pytest-cov==2.7.1",
+        "pytest-mock==1.11.0",
+        "pytz==2019.2",
+        "readme-renderer==24.0",
+        "requests==2.22.0",
+        "requests-toolbelt==0.9.1",
+        "six==1.12.0",
+        "smmap2==2.0.5",
+        "tabulate==0.8.5",
+        "tqdm==4.36.1",
+        "twine==2.0.0",
+        "urllib3==1.25.6",
+        "wcwidth==0.1.7",
+        "webencodings==0.5.1",
+        "zipp==0.6.0"
+      ],
+      "test": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pytest",
+            "-vv",
+            "tests"
+          ],
+          "output": "============================= test session starts ==============================\nplatform linux -- Python 3.6.8, pytest-5.2.0, py-1.8.0, pluggy-0.13.0 -- /home/jan/devel/cuda/atdiff/.tox/py36/bin/python3\ncachedir: .tox/py36/.pytest_cache\nhypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/jan/devel/cuda/atdiff/.hypothesis/examples')\nrootdir: /home/jan/devel/cuda/atdiff\nplugins: mock-1.11.0, cov-2.7.1, hypothesis-4.37.0\ncollecting ... collected 7 items\n\ntests/test_general.py::test_help_needed PASSED                           [ 14%]\ntests/test_general.py::test_version_arg PASSED                           [ 28%]\ntests/test_general.py::test_load_file PASSED                             [ 42%]\ntests/test_general.py::test_main_runcomp PASSED                          [ 57%]\ntests/test_general.py::test_load_mongo PASSED                            [ 71%]\ntests/test_general.py::test_singlemongo PASSED                           [ 85%]\ntests/test_general.py::test_runcmp_formats_present FAILED                [100%]\n\n=================================== FAILURES ===================================\n_________________________ test_runcmp_formats_present __________________________\n\ncapsys = <_pytest.capture.CaptureFixture object at 0x7f62b9a6bcc0>\n\n    def test_runcmp_formats_present(capsys):\n>       atdiff.runcmp.__main__.main()\n\ntests/test_general.py:107: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n.tox/py36/lib/python3.6/site-packages/atdiff/runcmp/__main__.py:60: in main\n    [\"tablefmt=\", \"clipboard-output\", \"review-columns\", \"print-links\"],\n/usr/lib/python3.6/getopt.py:138: in gnu_getopt\n    opts, args = do_shorts(opts, args[0][1:], shortopts, args[1:])\n/usr/lib/python3.6/getopt.py:195: in do_shorts\n    if short_has_arg(opt, shortopts):\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nopt = 'v', shortopts = 'f:t:cCu'\n\n    def short_has_arg(opt, shortopts):\n        for i in range(len(shortopts)):\n            if opt == shortopts[i] != ':':\n                return shortopts.startswith(':', i+1)\n>       raise GetoptError(_('option -%s not recognized') % opt, opt)\nE       getopt.GetoptError: option -v not recognized\n\n/usr/lib/python3.6/getopt.py:211: GetoptError\n========================= 1 failed, 6 passed in 1.23s ==========================\n",
+          "retcode": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "reportversion": "1",
+  "toxversion": "3.14.0",
+  "platform": "linux",
+  "host": "jcgbx",
+  "commands": [],
+  "testenvs": {
+    "py27": {
+      "setup": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+            "-m",
+            "pip",
+            "freeze"
+          ],
+          "output": "DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support\natdiff==0.2.5.post190924152326\natomicwrites==1.3.0\nattrs==19.1.0\nconfigparser==4.0.2\ncontextlib2==0.6.0\ncoverage==4.5.4\nenum34==1.1.6\nfuncsigs==1.0.2\nhypothesis==4.36.2\nimportlib-metadata==0.23\nmock==3.0.5\nmore-itertools==5.0.0\npackaging==19.2\npathlib2==2.3.4\npluggy==0.13.0\npy==1.8.0\npymongo==3.4.0\npyparsing==2.4.2\npyperclip==1.7.0\npytest==4.6.5\npytest-cov==2.7.1\npytest-mock==1.10.4\npytest-sugar==0.9.2\nscandir==1.10.0\nsix==1.12.0\ntabulate==0.8.3\ntermcolor==1.1.0\nwcwidth==0.1.7\nzipp==0.6.0\n",
+          "retcode": 0
+        }
+      ],
+      "python": {
+        "executable": "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+        "name": "python",
+        "version_info": [
+          2,
+          7,
+          15,
+          "final",
+          0
+        ],
+        "sysplatform": "linux2",
+        "version": "2.7.15+ (default, Jul  9 2019, 16:51:35) \n[GCC 7.4.0]",
+        "is_64": true
+      },
+      "installed_packages": [
+        "DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support",
+        "atdiff==0.2.5.post190924152326",
+        "atomicwrites==1.3.0",
+        "attrs==19.1.0",
+        "configparser==4.0.2",
+        "contextlib2==0.6.0",
+        "coverage==4.5.4",
+        "enum34==1.1.6",
+        "funcsigs==1.0.2",
+        "hypothesis==4.36.2",
+        "importlib-metadata==0.23",
+        "mock==3.0.5",
+        "more-itertools==5.0.0",
+        "packaging==19.2",
+        "pathlib2==2.3.4",
+        "pluggy==0.13.0",
+        "py==1.8.0",
+        "pymongo==3.4.0",
+        "pyparsing==2.4.2",
+        "pyperclip==1.7.0",
+        "pytest==4.6.5",
+        "pytest-cov==2.7.1",
+        "pytest-mock==1.10.4",
+        "pytest-sugar==0.9.2",
+        "scandir==1.10.0",
+        "six==1.12.0",
+        "tabulate==0.8.3",
+        "termcolor==1.1.0",
+        "wcwidth==0.1.7",
+        "zipp==0.6.0"
+      ],
+      "test": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "./[test]"
+          ],
+          "output": "DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support\nLooking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nProcessing /home/jan/devel/cuda/atdiff\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n    Preparing wheel metadata: started\n    Preparing wheel metadata: finished with status 'done'\nRequirement already satisfied: tabulate in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (0.8.3)\nRequirement already satisfied: pymongo<3.5,>3.3 in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (3.4.0)\nRequirement already satisfied: pyperclip in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (1.7.0)\nRequirement already satisfied: hypothesis; extra == \"test\" in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (4.36.2)\nRequirement already satisfied: pytest-sugar; extra == \"test\" in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (0.9.2)\nRequirement already satisfied: pytest; extra == \"test\" in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (4.6.5)\nRequirement already satisfied: pytest-cov; extra == \"test\" in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (2.7.1)\nRequirement already satisfied: pytest-mock; extra == \"test\" in ./.tox/py27/lib/python2.7/site-packages (from atdiff==0.2.5.post190924152241) (1.10.4)\nRequirement already satisfied: attrs>=16.0.0 in ./.tox/py27/lib/python2.7/site-packages (from hypothesis; extra == \"test\"->atdiff==0.2.5.post190924152241) (19.1.0)\nRequirement already satisfied: enum34; python_version == \"2.7\" in ./.tox/py27/lib/python2.7/site-packages (from hypothesis; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.1.6)\nRequirement already satisfied: packaging>=14.1 in ./.tox/py27/lib/python2.7/site-packages (from pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (19.2)\nRequirement already satisfied: termcolor>=1.1.0 in ./.tox/py27/lib/python2.7/site-packages (from pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.1.0)\nRequirement already satisfied: more-itertools<6.0.0,>=4.0.0; python_version <= \"2.7\" in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (5.0.0)\nRequirement already satisfied: importlib-metadata>=0.12 in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.23)\nRequirement already satisfied: pathlib2>=2.2.0; python_version < \"3.6\" in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (2.3.4)\nRequirement already satisfied: six>=1.10.0 in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.12.0)\nRequirement already satisfied: wcwidth in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.1.7)\nRequirement already satisfied: py>=1.5.0 in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.8.0)\nRequirement already satisfied: atomicwrites>=1.0 in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.3.0)\nRequirement already satisfied: pluggy<1.0,>=0.12 in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.13.0)\nRequirement already satisfied: funcsigs>=1.0; python_version < \"3.0\" in ./.tox/py27/lib/python2.7/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.0.2)\nRequirement already satisfied: coverage>=4.4 in ./.tox/py27/lib/python2.7/site-packages (from pytest-cov; extra == \"test\"->atdiff==0.2.5.post190924152241) (4.5.4)\nRequirement already satisfied: mock; python_version < \"3.0\" in ./.tox/py27/lib/python2.7/site-packages (from pytest-mock; extra == \"test\"->atdiff==0.2.5.post190924152241) (3.0.5)\nRequirement already satisfied: pyparsing>=2.0.2 in ./.tox/py27/lib/python2.7/site-packages (from packaging>=14.1->pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (2.4.2)\nRequirement already satisfied: contextlib2; python_version < \"3\" in ./.tox/py27/lib/python2.7/site-packages (from importlib-metadata>=0.12->pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.6.0)\nRequirement already satisfied: configparser>=3.5; python_version < \"3\" in ./.tox/py27/lib/python2.7/site-packages (from importlib-metadata>=0.12->pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (4.0.2)\nRequirement already satisfied: zipp>=0.5 in ./.tox/py27/lib/python2.7/site-packages (from importlib-metadata>=0.12->pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.6.0)\nRequirement already satisfied: scandir; python_version < \"3.5\" in ./.tox/py27/lib/python2.7/site-packages (from pathlib2>=2.2.0; python_version < \"3.6\"->pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.10.0)\nBuilding wheels for collected packages: atdiff\n  Building wheel for atdiff (PEP 517): started\n  Building wheel for atdiff (PEP 517): finished with status 'done'\n  Created wheel for atdiff: filename=atdiff-0.2.5.post190924152241-cp27-none-any.whl size=16636 sha256=71037b306a3f52a2cdfdfa8a1f61ea1187a8221416a1dd83b32f615d7615ee1f\n  Stored in directory: /tmp/pip-ephem-wheel-cache-a_JgXx/wheels/5c/e5/39/9fb1cb542e125aaee160ffa8c965e8037fead34bc023dbafd6\nSuccessfully built atdiff\nInstalling collected packages: atdiff\n  Found existing installation: atdiff 0.2.5.post190924152326\n    Uninstalling atdiff-0.2.5.post190924152326:\n      Successfully uninstalled atdiff-0.2.5.post190924152326\nSuccessfully installed atdiff-0.2.5.post190924152241\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pytest",
+            "./tests/"
+          ],
+          "output": "============================= test session starts ==============================\nplatform linux2 -- Python 2.7.15+, pytest-4.6.5, py-1.8.0, pluggy-0.13.0\ncachedir: .tox/py27/.pytest_cache\nhypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/jan/devel/cuda/atdiff/.hypothesis/examples')\nrootdir: /home/jan/devel/cuda/atdiff\nplugins: hypothesis-4.36.2, sugar-0.9.2, cov-2.7.1, mock-1.10.4\ncollected 7 items\n\ntests/test_general.py .......                                            [100%]\n\n=========================== 7 passed in 1.41 seconds ===========================\n",
+          "retcode": 0
+        }
+      ]
+    },
+    "py36": {
+      "setup": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+            "-m",
+            "pip",
+            "freeze"
+          ],
+          "output": "atdiff==0.2.5.post190924152349\natomicwrites==1.3.0\nattrs==19.1.0\ncoverage==4.5.4\nhypothesis==4.36.2\nimportlib-metadata==0.23\nmore-itertools==7.2.0\npackaging==19.2\npluggy==0.13.0\npy==1.8.0\npymongo==3.4.0\npyparsing==2.4.2\npyperclip==1.7.0\npytest==5.1.3\npytest-cov==2.7.1\npytest-mock==1.10.4\npytest-sugar==0.9.2\nsix==1.12.0\ntabulate==0.8.3\ntermcolor==1.1.0\nwcwidth==0.1.7\nzipp==0.6.0\n",
+          "retcode": 0
+        }
+      ],
+      "python": {
+        "executable": "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+        "name": "python",
+        "version_info": [
+          3,
+          6,
+          8,
+          "final",
+          0
+        ],
+        "version": "3.6.8 (default, Aug 20 2019, 17:12:48) \n[GCC 8.3.0]",
+        "is_64": true,
+        "sysplatform": "linux"
+      },
+      "installed_packages": [
+        "atdiff==0.2.5.post190924152349",
+        "atomicwrites==1.3.0",
+        "attrs==19.1.0",
+        "coverage==4.5.4",
+        "hypothesis==4.36.2",
+        "importlib-metadata==0.23",
+        "more-itertools==7.2.0",
+        "packaging==19.2",
+        "pluggy==0.13.0",
+        "py==1.8.0",
+        "pymongo==3.4.0",
+        "pyparsing==2.4.2",
+        "pyperclip==1.7.0",
+        "pytest==5.1.3",
+        "pytest-cov==2.7.1",
+        "pytest-mock==1.10.4",
+        "pytest-sugar==0.9.2",
+        "six==1.12.0",
+        "tabulate==0.8.3",
+        "termcolor==1.1.0",
+        "wcwidth==0.1.7",
+        "zipp==0.6.0"
+      ],
+      "test": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "./[test]"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nProcessing /home/jan/devel/cuda/atdiff\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n    Preparing wheel metadata: started\n    Preparing wheel metadata: finished with status 'done'\nRequirement already satisfied: pyperclip in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (1.7.0)\nRequirement already satisfied: tabulate in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (0.8.3)\nRequirement already satisfied: pymongo<3.5,>3.3 in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (3.4.0)\nRequirement already satisfied: pytest-mock; extra == \"test\" in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (1.10.4)\nRequirement already satisfied: hypothesis; extra == \"test\" in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (4.36.2)\nRequirement already satisfied: pytest-sugar; extra == \"test\" in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (0.9.2)\nRequirement already satisfied: pytest; extra == \"test\" in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (5.1.3)\nRequirement already satisfied: pytest-cov; extra == \"test\" in ./.tox/py36/lib/python3.6/site-packages (from atdiff==0.2.5.post190924152241) (2.7.1)\nRequirement already satisfied: attrs>=16.0.0 in ./.tox/py36/lib/python3.6/site-packages (from hypothesis; extra == \"test\"->atdiff==0.2.5.post190924152241) (19.1.0)\nRequirement already satisfied: packaging>=14.1 in ./.tox/py36/lib/python3.6/site-packages (from pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (19.2)\nRequirement already satisfied: termcolor>=1.1.0 in ./.tox/py36/lib/python3.6/site-packages (from pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.1.0)\nRequirement already satisfied: pluggy<1.0,>=0.12 in ./.tox/py36/lib/python3.6/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.13.0)\nRequirement already satisfied: wcwidth in ./.tox/py36/lib/python3.6/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.1.7)\nRequirement already satisfied: py>=1.5.0 in ./.tox/py36/lib/python3.6/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.8.0)\nRequirement already satisfied: atomicwrites>=1.0 in ./.tox/py36/lib/python3.6/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.3.0)\nRequirement already satisfied: more-itertools>=4.0.0 in ./.tox/py36/lib/python3.6/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (7.2.0)\nRequirement already satisfied: importlib-metadata>=0.12; python_version < \"3.8\" in ./.tox/py36/lib/python3.6/site-packages (from pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.23)\nRequirement already satisfied: coverage>=4.4 in ./.tox/py36/lib/python3.6/site-packages (from pytest-cov; extra == \"test\"->atdiff==0.2.5.post190924152241) (4.5.4)\nRequirement already satisfied: pyparsing>=2.0.2 in ./.tox/py36/lib/python3.6/site-packages (from packaging>=14.1->pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (2.4.2)\nRequirement already satisfied: six in ./.tox/py36/lib/python3.6/site-packages (from packaging>=14.1->pytest-sugar; extra == \"test\"->atdiff==0.2.5.post190924152241) (1.12.0)\nRequirement already satisfied: zipp>=0.5 in ./.tox/py36/lib/python3.6/site-packages (from importlib-metadata>=0.12; python_version < \"3.8\"->pytest; extra == \"test\"->atdiff==0.2.5.post190924152241) (0.6.0)\nBuilding wheels for collected packages: atdiff\n  Building wheel for atdiff (PEP 517): started\n  Building wheel for atdiff (PEP 517): finished with status 'done'\n  Created wheel for atdiff: filename=atdiff-0.2.5.post190924152241-cp36-none-any.whl size=16636 sha256=5af942b1399087ed8df536f95053cc6b6ab0269395dd9031686d5f6c564e7d38\n  Stored in directory: /tmp/pip-ephem-wheel-cache-vlszhdpv/wheels/5c/e5/39/9fb1cb542e125aaee160ffa8c965e8037fead34bc023dbafd6\nSuccessfully built atdiff\nInstalling collected packages: atdiff\n  Found existing installation: atdiff 0.2.5.post190924152349\n    Uninstalling atdiff-0.2.5.post190924152349:\n      Successfully uninstalled atdiff-0.2.5.post190924152349\nSuccessfully installed atdiff-0.2.5.post190924152241\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pytest",
+            "./tests/"
+          ],
+          "output": "============================= test session starts ==============================\nplatform linux -- Python 3.6.8, pytest-5.1.3, py-1.8.0, pluggy-0.13.0\ncachedir: .tox/py36/.pytest_cache\nhypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/jan/devel/cuda/atdiff/.hypothesis/examples')\nrootdir: /home/jan/devel/cuda/atdiff\nplugins: hypothesis-4.36.2, sugar-0.9.2, cov-2.7.1, mock-1.10.4\ncollected 7 items\n\ntests/test_general.py .......                                            [100%]\n\n=============================== warnings summary ===============================\n.tox/py36/lib/python3.6/site-packages/pymongo/pool.py:124\n  /home/jan/devel/cuda/atdiff/.tox/py36/lib/python3.6/site-packages/pymongo/pool.py:124: PendingDeprecationWarning: dist() and linux_distribution() functions are deprecated in Python 3.5\n    platform.linux_distribution() if part])),\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n======================== 7 passed, 1 warnings in 1.21s =========================\n",
+          "retcode": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "reportversion": "1",
+  "toxversion": "3.14.0",
+  "platform": "linux",
+  "host": "jcgbx",
+  "commands": [],
+  "testenvs": {
+    "py27": {
+      "setup": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+            "setup.py",
+            "bdist_wheel",
+            "--dist-dir",
+            ".tox/dist"
+          ],
+          "output": "running bdist_wheel\nrunning build\nrunning build_py\ncreating build/lib.linux-x86_64-2.7\ncreating build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/terminal.py -> build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/__init__.py -> build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/__main__.py -> build/lib.linux-x86_64-2.7/atdiff\ncopying src/atdiff/_version.py -> build/lib.linux-x86_64-2.7/atdiff\ncreating build/lib.linux-x86_64-2.7/atdiff/metrics\ncopying src/atdiff/metrics/metrics.py -> build/lib.linux-x86_64-2.7/atdiff/metrics\ncopying src/atdiff/metrics/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/metrics\ncopying src/atdiff/metrics/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/metrics\ncreating build/lib.linux-x86_64-2.7/atdiff/runcmp\ncopying src/atdiff/runcmp/runcmp.py -> build/lib.linux-x86_64-2.7/atdiff/runcmp\ncopying src/atdiff/runcmp/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/runcmp\ncopying src/atdiff/runcmp/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/runcmp\ncreating build/lib.linux-x86_64-2.7/atdiff/reginfo\ncopying src/atdiff/reginfo/reginfo.py -> build/lib.linux-x86_64-2.7/atdiff/reginfo\ncopying src/atdiff/reginfo/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/reginfo\ncopying src/atdiff/reginfo/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/reginfo\ncreating build/lib.linux-x86_64-2.7/atdiff/promo\ncopying src/atdiff/promo/promo.py -> build/lib.linux-x86_64-2.7/atdiff/promo\ncopying src/atdiff/promo/__init__.py -> build/lib.linux-x86_64-2.7/atdiff/promo\ncopying src/atdiff/promo/__main__.py -> build/lib.linux-x86_64-2.7/atdiff/promo\nrunning egg_info\nwriting top-level names to src/atdiff.egg-info/top_level.txt\nwriting entry points to src/atdiff.egg-info/entry_points.txt\nwriting src/atdiff.egg-info/PKG-INFO\nwriting requirements to src/atdiff.egg-info/requires.txt\nwriting dependency_links to src/atdiff.egg-info/dependency_links.txt\nreading manifest file 'src/atdiff.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwriting manifest file 'src/atdiff.egg-info/SOURCES.txt'\ninstalling to build/bdist.linux-x86_64/wheel\nrunning install\nrunning install_lib\ncreating build/bdist.linux-x86_64\ncreating build/bdist.linux-x86_64/wheel\ncreating build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib.linux-x86_64-2.7/atdiff/metrics/metrics.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib.linux-x86_64-2.7/atdiff/metrics/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib.linux-x86_64-2.7/atdiff/metrics/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncreating build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/runcmp/runcmp.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/runcmp/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/runcmp/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib.linux-x86_64-2.7/atdiff/terminal.py -> build/bdist.linux-x86_64/wheel/atdiff\ncopying build/lib.linux-x86_64-2.7/atdiff/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/reginfo/reginfo.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/reginfo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/reginfo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib.linux-x86_64-2.7/atdiff/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/promo/promo.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/promo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/promo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib.linux-x86_64-2.7/atdiff/_version.py -> build/bdist.linux-x86_64/wheel/atdiff\nrunning install_egg_info\nCopying src/atdiff.egg-info to build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post191001145804-py2.7.egg-info\nrunning install_scripts\ncreating build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post191001145804.dist-info/WHEEL\ncreating '.tox/dist/atdiff-0.2.5.post191001145804-py2.py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it\nadding 'atdiff/__init__.py'\nadding 'atdiff/__main__.py'\nadding 'atdiff/_version.py'\nadding 'atdiff/terminal.py'\nadding 'atdiff/metrics/__init__.py'\nadding 'atdiff/metrics/__main__.py'\nadding 'atdiff/metrics/metrics.py'\nadding 'atdiff/promo/__init__.py'\nadding 'atdiff/promo/__main__.py'\nadding 'atdiff/promo/promo.py'\nadding 'atdiff/reginfo/__init__.py'\nadding 'atdiff/reginfo/__main__.py'\nadding 'atdiff/reginfo/reginfo.py'\nadding 'atdiff/runcmp/__init__.py'\nadding 'atdiff/runcmp/__main__.py'\nadding 'atdiff/runcmp/runcmp.py'\nadding 'atdiff-0.2.5.post191001145804.dist-info/METADATA'\nadding 'atdiff-0.2.5.post191001145804.dist-info/WHEEL'\nadding 'atdiff-0.2.5.post191001145804.dist-info/entry_points.txt'\nadding 'atdiff-0.2.5.post191001145804.dist-info/top_level.txt'\nadding 'atdiff-0.2.5.post191001145804.dist-info/zip-safe'\nadding 'atdiff-0.2.5.post191001145804.dist-info/RECORD'\nremoving build/bdist.linux-x86_64/wheel\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "--no-deps",
+            "-U",
+            ".tox/.tmp/package/1/atdiff-0.2.5.post191001145804-py2.py3-none-any.whl"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nProcessing ./.tox/.tmp/package/1/atdiff-0.2.5.post191001145804-py2.py3-none-any.whl\nInstalling collected packages: atdiff\n  Found existing installation: atdiff 0.2.5.post191001144854\n    Uninstalling atdiff-0.2.5.post191001144854:\n      Successfully uninstalled atdiff-0.2.5.post191001144854\nSuccessfully installed atdiff-0.2.5.post191001145804\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+            "-m",
+            "pip",
+            "freeze"
+          ],
+          "output": "atdiff==0.2.5.post191001145804\natomicwrites==1.3.0\nattrs==19.1.0\nbleach==3.1.0\ncertifi==2019.9.11\nchardet==3.0.4\nconfigparser==4.0.2\ncontextlib2==0.6.0\ncoverage==4.5.4\ncudasetuptools==0.2.24\ndocutils==0.15.2\nenum34==1.1.6\nfuncsigs==1.0.2\ngitdb2==2.0.6\nGitPython==2.1.14\nhypothesis==4.37.0\nidna==2.8\nimportlib-metadata==0.23\nimportlib-resources==1.0.2\nmock==3.0.5\nmore-itertools==5.0.0\npackaging==19.2\npathlib2==2.3.5\npkginfo==1.5.0.1\npluggy==0.13.0\npy==1.8.0\nPygments==2.4.2\npymongo==3.4.0\npyparsing==2.4.2\npyperclip==1.7.0\npytest==4.6.5\npytest-cov==2.7.1\npytest-mock==1.11.0\npytz==2019.2\nreadme-renderer==24.0\nrequests==2.22.0\nrequests-toolbelt==0.9.1\nscandir==1.10.0\nsix==1.12.0\nsmmap2==2.0.5\ntabulate==0.8.5\ntqdm==4.36.1\ntwine==1.15.0\ntyping==3.7.4.1\nurllib3==1.25.6\nwcwidth==0.1.7\nwebencodings==0.5.1\nzipp==0.6.0\n",
+          "retcode": 0
+        }
+      ],
+      "python": {
+        "executable": "/home/jan/devel/cuda/atdiff/.tox/py27/bin/python",
+        "name": "python",
+        "version_info": [
+          2,
+          7,
+          15,
+          "final",
+          0
+        ],
+        "sysplatform": "linux2",
+        "version": "2.7.15+ (default, Jul  9 2019, 16:51:35) \n[GCC 7.4.0]",
+        "is_64": true
+      },
+      "installpkg": {
+        "sha256": "3e991455b144cbb28afcfbad392f940b9b83cccc9ef90b47ca89a4d48fc74013",
+        "basename": "atdiff-0.2.5.post191001145804-py2.py3-none-any.whl"
+      },
+      "installed_packages": [
+        "atdiff==0.2.5.post191001145804",
+        "atomicwrites==1.3.0",
+        "attrs==19.1.0",
+        "bleach==3.1.0",
+        "certifi==2019.9.11",
+        "chardet==3.0.4",
+        "configparser==4.0.2",
+        "contextlib2==0.6.0",
+        "coverage==4.5.4",
+        "cudasetuptools==0.2.24",
+        "docutils==0.15.2",
+        "enum34==1.1.6",
+        "funcsigs==1.0.2",
+        "gitdb2==2.0.6",
+        "GitPython==2.1.14",
+        "hypothesis==4.37.0",
+        "idna==2.8",
+        "importlib-metadata==0.23",
+        "importlib-resources==1.0.2",
+        "mock==3.0.5",
+        "more-itertools==5.0.0",
+        "packaging==19.2",
+        "pathlib2==2.3.5",
+        "pkginfo==1.5.0.1",
+        "pluggy==0.13.0",
+        "py==1.8.0",
+        "Pygments==2.4.2",
+        "pymongo==3.4.0",
+        "pyparsing==2.4.2",
+        "pyperclip==1.7.0",
+        "pytest==4.6.5",
+        "pytest-cov==2.7.1",
+        "pytest-mock==1.11.0",
+        "pytz==2019.2",
+        "readme-renderer==24.0",
+        "requests==2.22.0",
+        "requests-toolbelt==0.9.1",
+        "scandir==1.10.0",
+        "six==1.12.0",
+        "smmap2==2.0.5",
+        "tabulate==0.8.5",
+        "tqdm==4.36.1",
+        "twine==1.15.0",
+        "typing==3.7.4.1",
+        "urllib3==1.25.6",
+        "wcwidth==0.1.7",
+        "webencodings==0.5.1",
+        "zipp==0.6.0"
+      ],
+      "test": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py27/bin/pytest",
+            "-vv",
+            "tests"
+          ],
+          "output": "============================= test session starts ==============================\nplatform linux2 -- Python 2.7.15+, pytest-4.6.5, py-1.8.0, pluggy-0.13.0 -- /home/jan/devel/cuda/atdiff/.tox/py27/bin/python2.7\ncachedir: .tox/py27/.pytest_cache\nhypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/jan/devel/cuda/atdiff/.hypothesis/examples')\nrootdir: /home/jan/devel/cuda/atdiff\nplugins: mock-1.11.0, cov-2.7.1, hypothesis-4.37.0\ncollecting ... collected 7 items\n\ntests/test_general.py::test_help_needed PASSED                           [ 14%]\ntests/test_general.py::test_version_arg PASSED                           [ 28%]\ntests/test_general.py::test_load_file PASSED                             [ 42%]\ntests/test_general.py::test_main_runcomp PASSED                          [ 57%]\ntests/test_general.py::test_load_mongo PASSED                            [ 71%]\ntests/test_general.py::test_singlemongo PASSED                           [ 85%]\ntests/test_general.py::test_runcmp_formats_present PASSED                [100%]\n\n=========================== 7 passed in 1.20 seconds ===========================\n",
+          "retcode": 0
+        }
+      ]
+    },
+    "py36": {
+      "setup": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+            "setup.py",
+            "bdist_wheel",
+            "--dist-dir",
+            ".tox/dist"
+          ],
+          "output": "running bdist_wheel\nrunning build\nrunning build_py\ncreating build/lib\ncreating build/lib/atdiff\ncopying src/atdiff/terminal.py -> build/lib/atdiff\ncopying src/atdiff/__init__.py -> build/lib/atdiff\ncopying src/atdiff/__main__.py -> build/lib/atdiff\ncopying src/atdiff/_version.py -> build/lib/atdiff\ncreating build/lib/atdiff/metrics\ncopying src/atdiff/metrics/metrics.py -> build/lib/atdiff/metrics\ncopying src/atdiff/metrics/__init__.py -> build/lib/atdiff/metrics\ncopying src/atdiff/metrics/__main__.py -> build/lib/atdiff/metrics\ncreating build/lib/atdiff/runcmp\ncopying src/atdiff/runcmp/runcmp.py -> build/lib/atdiff/runcmp\ncopying src/atdiff/runcmp/__init__.py -> build/lib/atdiff/runcmp\ncopying src/atdiff/runcmp/__main__.py -> build/lib/atdiff/runcmp\ncreating build/lib/atdiff/reginfo\ncopying src/atdiff/reginfo/reginfo.py -> build/lib/atdiff/reginfo\ncopying src/atdiff/reginfo/__init__.py -> build/lib/atdiff/reginfo\ncopying src/atdiff/reginfo/__main__.py -> build/lib/atdiff/reginfo\ncreating build/lib/atdiff/promo\ncopying src/atdiff/promo/promo.py -> build/lib/atdiff/promo\ncopying src/atdiff/promo/__init__.py -> build/lib/atdiff/promo\ncopying src/atdiff/promo/__main__.py -> build/lib/atdiff/promo\nrunning egg_info\nwriting src/atdiff.egg-info/PKG-INFO\nwriting dependency_links to src/atdiff.egg-info/dependency_links.txt\nwriting entry points to src/atdiff.egg-info/entry_points.txt\nwriting requirements to src/atdiff.egg-info/requires.txt\nwriting top-level names to src/atdiff.egg-info/top_level.txt\nreading manifest file 'src/atdiff.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwriting manifest file 'src/atdiff.egg-info/SOURCES.txt'\ninstalling to build/bdist.linux-x86_64/wheel\nrunning install\nrunning install_lib\ncreating build/bdist.linux-x86_64\ncreating build/bdist.linux-x86_64/wheel\ncreating build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib/atdiff/metrics/metrics.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib/atdiff/metrics/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncopying build/lib/atdiff/metrics/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/metrics\ncreating build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/runcmp/runcmp.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/runcmp/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/runcmp/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/runcmp\ncopying build/lib/atdiff/terminal.py -> build/bdist.linux-x86_64/wheel/atdiff\ncopying build/lib/atdiff/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/reginfo/reginfo.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/reginfo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/reginfo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/reginfo\ncopying build/lib/atdiff/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff\ncreating build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/promo/promo.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/promo/__init__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/promo/__main__.py -> build/bdist.linux-x86_64/wheel/atdiff/promo\ncopying build/lib/atdiff/_version.py -> build/bdist.linux-x86_64/wheel/atdiff\nrunning install_egg_info\nCopying src/atdiff.egg-info to build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post191001145804-py3.6.egg-info\nrunning install_scripts\ncreating build/bdist.linux-x86_64/wheel/atdiff-0.2.5.post191001145804.dist-info/WHEEL\ncreating '.tox/dist/atdiff-0.2.5.post191001145804-py2.py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it\nadding 'atdiff/__init__.py'\nadding 'atdiff/__main__.py'\nadding 'atdiff/_version.py'\nadding 'atdiff/terminal.py'\nadding 'atdiff/metrics/__init__.py'\nadding 'atdiff/metrics/__main__.py'\nadding 'atdiff/metrics/metrics.py'\nadding 'atdiff/promo/__init__.py'\nadding 'atdiff/promo/__main__.py'\nadding 'atdiff/promo/promo.py'\nadding 'atdiff/reginfo/__init__.py'\nadding 'atdiff/reginfo/__main__.py'\nadding 'atdiff/reginfo/reginfo.py'\nadding 'atdiff/runcmp/__init__.py'\nadding 'atdiff/runcmp/__main__.py'\nadding 'atdiff/runcmp/runcmp.py'\nadding 'atdiff-0.2.5.post191001145804.dist-info/METADATA'\nadding 'atdiff-0.2.5.post191001145804.dist-info/WHEEL'\nadding 'atdiff-0.2.5.post191001145804.dist-info/entry_points.txt'\nadding 'atdiff-0.2.5.post191001145804.dist-info/top_level.txt'\nadding 'atdiff-0.2.5.post191001145804.dist-info/zip-safe'\nadding 'atdiff-0.2.5.post191001145804.dist-info/RECORD'\nremoving build/bdist.linux-x86_64/wheel\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pip",
+            "install",
+            "--trusted-host",
+            "10.17.65.203",
+            "--index-url",
+            "http://10.17.65.203/root/test",
+            "--no-deps",
+            "-U",
+            ".tox/.tmp/package/2/atdiff-0.2.5.post191001145804-py2.py3-none-any.whl"
+          ],
+          "output": "Looking in indexes: http://10.17.65.203/root/test, http://10.17.65.203/root/production/+simple/\nProcessing ./.tox/.tmp/package/2/atdiff-0.2.5.post191001145804-py2.py3-none-any.whl\nInstalling collected packages: atdiff\n  Found existing installation: atdiff 0.2.5.post191001144855\n    Uninstalling atdiff-0.2.5.post191001144855:\n      Successfully uninstalled atdiff-0.2.5.post191001144855\nSuccessfully installed atdiff-0.2.5.post191001145804\n",
+          "retcode": 0
+        },
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+            "-m",
+            "pip",
+            "freeze"
+          ],
+          "output": "atdiff==0.2.5.post191001145804\natomicwrites==1.3.0\nattrs==19.1.0\nbleach==3.1.0\ncertifi==2019.9.11\nchardet==3.0.4\ncoverage==4.5.4\ncudasetuptools==0.2.24\ndocutils==0.15.2\ngitdb2==2.0.6\nGitPython==3.0.2\nhypothesis==4.37.0\nidna==2.8\nimportlib-metadata==0.23\nimportlib-resources==1.0.2\nmore-itertools==7.2.0\npackaging==19.2\npkginfo==1.5.0.1\npluggy==0.13.0\npy==1.8.0\nPygments==2.4.2\npymongo==3.4.0\npyparsing==2.4.2\npyperclip==1.7.0\npytest==5.2.0\npytest-cov==2.7.1\npytest-mock==1.11.0\npytz==2019.2\nreadme-renderer==24.0\nrequests==2.22.0\nrequests-toolbelt==0.9.1\nsix==1.12.0\nsmmap2==2.0.5\ntabulate==0.8.5\ntqdm==4.36.1\ntwine==2.0.0\nurllib3==1.25.6\nwcwidth==0.1.7\nwebencodings==0.5.1\nzipp==0.6.0\n",
+          "retcode": 0
+        }
+      ],
+      "python": {
+        "executable": "/home/jan/devel/cuda/atdiff/.tox/py36/bin/python",
+        "name": "python",
+        "version_info": [
+          3,
+          6,
+          8,
+          "final",
+          0
+        ],
+        "version": "3.6.8 (default, Aug 20 2019, 17:12:48) \n[GCC 8.3.0]",
+        "is_64": true,
+        "sysplatform": "linux"
+      },
+      "installpkg": {
+        "sha256": "3e991455b144cbb28afcfbad392f940b9b83cccc9ef90b47ca89a4d48fc74013",
+        "basename": "atdiff-0.2.5.post191001145804-py2.py3-none-any.whl"
+      },
+      "installed_packages": [
+        "atdiff==0.2.5.post191001145804",
+        "atomicwrites==1.3.0",
+        "attrs==19.1.0",
+        "bleach==3.1.0",
+        "certifi==2019.9.11",
+        "chardet==3.0.4",
+        "coverage==4.5.4",
+        "cudasetuptools==0.2.24",
+        "docutils==0.15.2",
+        "gitdb2==2.0.6",
+        "GitPython==3.0.2",
+        "hypothesis==4.37.0",
+        "idna==2.8",
+        "importlib-metadata==0.23",
+        "importlib-resources==1.0.2",
+        "more-itertools==7.2.0",
+        "packaging==19.2",
+        "pkginfo==1.5.0.1",
+        "pluggy==0.13.0",
+        "py==1.8.0",
+        "Pygments==2.4.2",
+        "pymongo==3.4.0",
+        "pyparsing==2.4.2",
+        "pyperclip==1.7.0",
+        "pytest==5.2.0",
+        "pytest-cov==2.7.1",
+        "pytest-mock==1.11.0",
+        "pytz==2019.2",
+        "readme-renderer==24.0",
+        "requests==2.22.0",
+        "requests-toolbelt==0.9.1",
+        "six==1.12.0",
+        "smmap2==2.0.5",
+        "tabulate==0.8.5",
+        "tqdm==4.36.1",
+        "twine==2.0.0",
+        "urllib3==1.25.6",
+        "wcwidth==0.1.7",
+        "webencodings==0.5.1",
+        "zipp==0.6.0"
+      ],
+      "test": [
+        {
+          "command": [
+            "/home/jan/devel/cuda/atdiff/.tox/py36/bin/pytest",
+            "-vv",
+            "tests"
+          ],
+          "output": "============================= test session starts ==============================\nplatform linux -- Python 3.6.8, pytest-5.2.0, py-1.8.0, pluggy-0.13.0 -- /home/jan/devel/cuda/atdiff/.tox/py36/bin/python3\ncachedir: .tox/py36/.pytest_cache\nhypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/jan/devel/cuda/atdiff/.hypothesis/examples')\nrootdir: /home/jan/devel/cuda/atdiff\nplugins: mock-1.11.0, cov-2.7.1, hypothesis-4.37.0\ncollecting ... collected 7 items\n\ntests/test_general.py::test_help_needed PASSED                           [ 14%]\ntests/test_general.py::test_version_arg PASSED                           [ 28%]\ntests/test_general.py::test_load_file PASSED                             [ 42%]\ntests/test_general.py::test_main_runcomp PASSED                          [ 57%]\ntests/test_general.py::test_load_mongo PASSED                            [ 71%]\ntests/test_general.py::test_singlemongo PASSED                           [ 85%]\ntests/test_general.py::test_runcmp_formats_present PASSED                [100%]\n\n============================== 7 passed in 1.16s ===============================\n",
+          "retcode": 0
+        }
+      ]
+    }
+  }
+}
